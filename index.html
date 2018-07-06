@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelTip</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">TravelTip</h1>
+    </header>
+
+    <div class="modal">
+        <div class="copy-link-modal">Link to location:
+            <span class="loc-link"></span>
+            <br />
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+    <div class="start-content center-content-start center-text">
+        <h1>Where do you want to go?</h1>
+        <label class="search-opts flex">
+            <input class="search-field" value="tel aviv" type="text" placeholder="search" autofocus/>
+            <button class="search-go">Go</button>
+            <button class="my-loc">My location</button>
+            <span class="far fa-copy"></span>
+        </label>
+    </div>
+
+    <div id="map" class="opacity"></div>
+<div class="place-name-temp flex">
+    <h3 class="curr-loc center-text"></h3>
+    <span class="weather-today center-text"></span>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
+
+
+    <!-- <div id="openweathermap-widget-19"></div>
+    <script>
+        window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
+        window.myWidgetParam.push({
+            id: 19,
+            cityid: '294801',
+            appid: '026a8c3051a2993a75e3424a25650f70',
+            units: 'metric',
+            containerid: 'openweathermap-widget-19',
+        });
+        (function () {
+            var script = document.createElement('script');
+            script.async = true;
+            script.charset = "utf-8";
+            script.src =
+                "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(script, s);
+        })();
+    </script> -->
+
